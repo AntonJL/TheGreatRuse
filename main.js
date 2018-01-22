@@ -6,6 +6,8 @@ function HelloWorld(){
     console.log("Anton too!");
     console.log("he uploaded work");
     console.log("ruuuuuuuuuuuuuuuuuuuse");
+
+    var muppet = ["muppet"];
 }
 
 HelloWorld();
