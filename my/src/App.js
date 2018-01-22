@@ -3,6 +3,11 @@ import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
+
+  goalsScored() {
+    return Math.random; 
+  }
+
   render() {
     return (
       <div className="App">
@@ -15,7 +20,10 @@ class App extends Component {
         </p>
         <p className="App-main">
           Main JSX goes here!
-        </p>
+
+          <br> Sam has scored {goalsScored()} goal(s). </br>
+          <br> Anton has scored {goalsScored()} goal(s). </br>
+          </p>
         <p className="App-end">
           This will be the footer!
         </p>
