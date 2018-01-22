@@ -42,10 +42,10 @@ class App extends Component {
         <p className="App-main">
           Main JSX goes here!
 
-          Sam has scored {this.returnGoals(samGoals)}.
-          Anton has scored {this.returnGoals(antonGoals)}.
+          <br /> Sam has scored {this.returnGoals(samGoals)}.
+          <br />Anton has scored {this.returnGoals(antonGoals)}. 
 
-          The winner is {this.findWinner(samGoals, antonGoals)}!
+          <br />The winner is {this.findWinner(samGoals, antonGoals)}!
         </p>
         <p className="App-end">
           This will be the footer!
