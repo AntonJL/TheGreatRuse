@@ -3,12 +3,33 @@ import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
+  
+  randomGoals(max) {
+    return Math.ceil(Math.random() * Math.floor(max));
+  }
 
-  goalsScored() {
-    return Math.random; 
+  returnGoals(number) {
+    if (number > 1) {
+      return number+' goals'; 
+    } else {
+      return number+' goal'; 
+    }
+    
+  }
+  
+  findWinner(samGoals, antonGoals) {
+    if (samGoals > antonGoals) {
+      return 'Sam';
+    } else {
+      return 'Anton';
+    }
   }
 
   render() {
+
+    const samGoals = this.randomGoals(10);
+    const antonGoals = this.randomGoals(9); 
+
     return (
       <div className="App">
         <header className="App-header">
@@ -21,9 +42,11 @@ class App extends Component {
         <p className="App-main">
           Main JSX goes here!
 
-          <br> Sam has scored {this.goalsScored()} goal(s). </br>
-          <br> Anton has scored {this.goalsScored()} goal(s). </br>
-          </p>
+          Sam has scored {this.returnGoals(samGoals)}.
+          Anton has scored {this.returnGoals(antonGoals)}.
+
+          The winner is {this.findWinner(samGoals, antonGoals)}!
+        </p>
         <p className="App-end">
           This will be the footer!
         </p>
