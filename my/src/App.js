@@ -20,8 +20,10 @@ class App extends Component {
   findWinner(samGoals, antonGoals) {
     if (samGoals > antonGoals) {
       return 'Sam';
-    } else {
+    } else if (antonGoals > samGoals) {
       return 'Anton';
+    } else {
+      return 'nobody';
     }
   }
 
