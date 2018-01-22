@@ -21,8 +21,8 @@ class App extends Component {
         <p className="App-main">
           Main JSX goes here!
 
-          <br> Sam has scored {goalsScored()} goal(s). </br>
-          <br> Anton has scored {goalsScored()} goal(s). </br>
+          <br> Sam has scored {this.goalsScored()} goal(s). </br>
+          <br> Anton has scored {this.goalsScored()} goal(s). </br>
           </p>
         <p className="App-end">
           This will be the footer!
