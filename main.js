@@ -8,6 +8,8 @@ function HelloWorld(){
     console.log("ruuuuuuuuuuuuuuuuuuuse");
 
     var muppet = ["muppet"];
+
+    //this actually worked
 }
 
 HelloWorld();
